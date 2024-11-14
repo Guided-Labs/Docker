@@ -121,7 +121,7 @@ To handle increased load on your **Java TodoApp**, you can scale the **todoapp**
     - Automatically assign different ports to each new instance (if necessary).
     - Ensure all instances are connected to the same network and can interact with the **MySQL** database.
 
-    ![Scaling](../Docker/Images/Scaling.png)
+    ![Scaling](Images/Scaling.png)
 
 2. **Verifying Scaled Containers**:
 
@@ -133,7 +133,7 @@ To handle increased load on your **Java TodoApp**, you can scale the **todoapp**
 
     The output should show multiple `todoapp` containers running:
 
-    ![ScalingPS](../Docker/Images/Scaling%20ps.png)
+    ![ScalingPS](Images/Scaling%20ps.png)
 
 3. **Scaling Down**:
 
@@ -145,7 +145,7 @@ To handle increased load on your **Java TodoApp**, you can scale the **todoapp**
 
     This will stop and remove the extra instances while keeping one instance running.
 
-    ![ScalingDown](../Docker/Images/ScalingDown.png)
+    ![ScalingDown](Images/ScalingDown.png)
 
 ## **References**
 ---

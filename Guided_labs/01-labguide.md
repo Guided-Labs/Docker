@@ -63,17 +63,17 @@ Ensure your system meets the following hardware specifications to run Docker Des
 #### 1. **Download Docker Desktop**:
    - Visit [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop) and download the Windows version of Docker Desktop 4.34.2.
    - Click on **Download for Windows-AMD64**.
-   ![AMD64](../Docker/Images/AMD64.png)
+   ![AMD64](Images/AMD64.png)
 
 #### 2. **Run the Installer**:
    - After the download is complete, run the installer (`Docker Desktop Installer.exe`).
    - Follow the installation prompts. Make sure **Install required components for WSL 2** is selected.
 
-  ![WSL2_config](../Docker/Images/WSL2_Config.png)
+  ![WSL2_config](Images/WSL2_Config.png)
 
-  ![Installation](../Docker/Images/Installation.png)
+  ![Installation](Images/Installation.png)
 
-  ![Installation_Success](../Docker/Images/Installed.png)
+  ![Installation_Success](Images/Installed.png)
 
 #### 3. **Restart the System**:
    - Once installation is complete, restart your system.
@@ -90,7 +90,7 @@ Ensure your system meets the following hardware specifications to run Docker Des
    docker --version
    ```
 
-   ![Version](../Docker/Images/Version.png)
+   ![Version](Images/Version.png)
 
 ## **References**
 ---

@@ -54,7 +54,7 @@ First, we need to create a Docker volume that will hold the data for our MySQL d
    docker volume create mysql-data
 ```
 
-![CreateVolumes](../Docker/Images/CreateVolume.png)
+![CreateVolumes](Images/CreateVolume.png)
 
 ### **Step-2: Run MySQL Container with Volume**
 Next, we will run the MySQL container using the volume we created. This will ensure that the database data is persisted.
@@ -66,7 +66,7 @@ Next, we will run the MySQL container using the volume we created. This will ens
 
   - **-v todoapp_data:/var/lib/mysql**: This flag mounts the **todoapp_data** volume to the **/var/lib/mysql** directory in the MySQL container, where MySQL stores its data files.
 
-![VolumeContainer](../Docker/Images/VolumeContainer.png)
+![VolumeContainer](Images/VolumeContainer.png)
 
 ### **Step-3: Run the TodoApp Container**
 
@@ -78,7 +78,7 @@ After setting up the MySQL container with a volume, you can run your TodoApp con
 
   - Ensure that your TodoApp is configured to connect to the MySQL database using the appropriate credentials and host settings.
 
-  ![VolumeTodoapp](../Docker/Images/VolumeTodoapp.png)
+  ![VolumeTodoapp](Images/VolumeTodoapp.png)
 
 ### **Step-4: Test Data Persistence**
 
@@ -87,9 +87,9 @@ After setting up the MySQL container with a volume, you can run your TodoApp con
 * Add some tasks to the TodoApp
   - Using the POST and GET method in **todo-controller**.
 
-  ![POST](../Docker/Images/POST.png)
+  ![POST](Images/POST.png)
 
-  ![GET](../Docker/Images/GET.png)
+  ![GET](Images/GET.png)
 
 * Stop the MySQL and TodoApp containers:
   
@@ -98,8 +98,8 @@ After setting up the MySQL container with a volume, you can run your TodoApp con
   docker stop todoapp
   ```
 
-  ![StopBothContainers](../Docker/Images/StopBothContainers.png)
-  ![Stop1](../Docker/Images/StopBothContainers1.png)
+  ![StopBothContainers](Images/StopBothContainers.png)
+  ![Stop1](Images/StopBothContainers1.png)
 
   >**Note**: You can also delete the containers but make sure that the volumes are added to the running containers
 
@@ -110,8 +110,8 @@ After setting up the MySQL container with a volume, you can run your TodoApp con
   docker start todoapp
   ```
 
-  ![StartBothContainers](../Docker/Images/startbothcontainers.png)
-  ![Start1](../Docker/Images/startbothcontainers1.png)
+  ![StartBothContainers](Images/startbothcontainers.png)
+  ![Start1](Images/startbothcontainers1.png)
 
 * Reopen your TodoApp in the web browser. You should see that the previously added tasks are still present, confirming that the data has been persisted.
 

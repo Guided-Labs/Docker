@@ -43,7 +43,7 @@ Completion of all previous lab guides (up to Lab Guide-08) is required before pr
   *  **Install Trivy** if you haven't already. You can download Trivy for Windows from the [official GitHub repository](https://github.com/aquasecurity/trivy).
   * In the README file, click on download binary from https://github.com/aquasecurity/trivy/releases/latest/
   * Download the appropriate Windows binary archive (**trivy_XXXX_Windows-64bit.zip**).
-  ![TrivyInstall](../Docker/Images/TrivyInstall.png)
+  ![TrivyInstall](Images/TrivyInstall.png)
 ### 2. Unpack the archive
 * Locate the downloaded **.zip** file and extract it using an archive tool like **WinRAR** or **7-Zip**.
 * This will extract a folder containing the **trivy.exe** binary.
@@ -57,8 +57,8 @@ To use Trivy from any command prompt, add the folder where **trivy.exe** is loca
 * Click **New** and paste the path where **trivy.exe** is located (e.g., **C:\path\to\trivy\folder**).
 * Click **OK** to close all the windows.
 
-  ![Trivypath](../Docker/Images/Trivypath.png)
-  ![Trivypath1](../Docker/Images/Trivypath1.png)
+  ![Trivypath](Images/Trivypath.png)
+  ![Trivypath1](Images/Trivypath1.png)
 ### 4. Verify the installation
 Open **Command Prompt** and type the following to check if Trivy is installed correctly:
 
@@ -68,7 +68,7 @@ trivy --version
 
 You should see the Trivy version printed, confirming the installation is successful.
 
-![Trivyversion](../Docker/Images/Trivyversion.png)
+![Trivyversion](Images/Trivyversion.png)
 
 ### 5. Set Execution Permissions (if necessary)
 By default, Windows executables do not require explicit permission to run. However, ensure that the file is not blocked:
@@ -87,7 +87,7 @@ By default, Windows executables do not require explicit permission to run. Howev
     docker pull mysql:8.0
     ```
 
-    ![DockerPull](../Docker/Images/DockerPull.png)
+    ![DockerPull](Images/DockerPull.png)
 
 3. **Scan the Docker image** using the built-in Docker Scan command:
 
@@ -107,9 +107,9 @@ By default, Windows executables do not require explicit permission to run. Howev
 
     Trivy will display a detailed report of vulnerabilities, categorized by severity (low, medium, high, critical).
 
-    ![TrivyScan](../Docker/Images/Trivy%20scan.png)
+    ![TrivyScan](Images/Trivy%20scan.png)
 
-    ![TrivyScan1](../Docker/Images/Trivy%20scan1.png)
+    ![TrivyScan1](Images/Trivy%20scan1.png)
 
 3. **Fix or mitigate vulnerabilities** based on the scan results. Update to the latest image versions or patch specific vulnerabilities as necessary.
 
@@ -190,9 +190,9 @@ docker pull openjdk:latest
 
     This command restricts the container to use no more than 512 MB of RAM and 1 CPU core.
 
-    ![LimitCPU](../Docker/Images/LimitCPU.png)
+    ![LimitCPU](Images/LimitCPU.png)
 
-    ![LimitCPU1](../Docker/Images/LimitCPU1.png)
+    ![LimitCPU1](Images/LimitCPU1.png)
 
 #### **2.5 Use Read-Only Filesystems**
 
@@ -204,7 +204,7 @@ docker pull openjdk:latest
 
     This prevents unwanted changes to the container’s filesystem.
 
-    ![ReadOnly](../Docker/Images/ReadOnly.png)
+    ![ReadOnly](Images/ReadOnly.png)
 
 #### **2.6 Limit Container Capabilities**
 
@@ -217,7 +217,7 @@ docker pull openjdk:latest
     This command drops all unnecessary capabilities, only allowing the container to bind to network ports.
     >Note: Make sure mysqldb is up and running in the same network as todoapp before running the above command
 
-    ![LimitContainer](../Docker/Images/LimitContainer.png)
+    ![LimitContainer](Images/LimitContainer.png)
 
 #### **2.7 Network Security**
 

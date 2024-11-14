@@ -62,7 +62,7 @@ Completion of all previous lab guides (up to Lab Guide-03) is required before pr
    docker network create todoapp_network
    ```
 
-   ![CreateNetwork](../Docker/Images/Create%20network.png)
+   ![CreateNetwork](Images/Create%20network.png)
 
    You can verify that the network was created by running:
 
@@ -72,7 +72,7 @@ Completion of all previous lab guides (up to Lab Guide-03) is required before pr
 
    You should see **todoapp_network** listed.
 
-   ![VerifyNetwork](../Docker/Images/Verify%20Network.png)
+   ![VerifyNetwork](Images/Verify%20Network.png)
 
 2. **Network Configuration**:
 
@@ -96,7 +96,7 @@ Next, we’ll run a MySQL container that will act as the database for the TodoAp
    - **--network todoapp_network**: Connects the container to the custom network.
    - **-e**: Sets environment variables for MySQL, including root password, database name, and user credentials.
 
-   ![mysqlNetwork](../Docker/Images/mysql%20network.png)
+   ![mysqlNetwork](Images/mysql%20network.png)
 
 ---
 
@@ -117,7 +117,7 @@ Assume that the TodoApp connects to a MySQL database for storing tasks. Here’s
    spring.jpa.show-sql=true
    ```
 
-   ![AppProperties](../Docker/Images/App%20properties.png)
+   ![AppProperties](Images/App%20properties.png)
 
 2. **Rebuild the TodoApp Image**:
 
@@ -127,7 +127,7 @@ Assume that the TodoApp connects to a MySQL database for storing tasks. Here’s
    docker build -t todoapp:1.1 .
    ```
 
-   ![todoapp1.1](../Docker/Images/todopp1.1.png)
+   ![todoapp1.1](Images/todopp1.1.png)
 
 ---
 
@@ -144,7 +144,7 @@ Assume that the TodoApp connects to a MySQL database for storing tasks. Here’s
    - **--network todoapp_network**: Connects the container to the custom network so it can communicate with the MySQL container.
    - **-p 8081:8081**: Exposes port 8081 of the container on port 8081 of the host machine.
 
-   ![todo1.1Container](../Docker/Images/todo1.1%20container.png)
+   ![todo1.1Container](Images/todo1.1%20container.png)
 
 2. **Verify the Containers are Connected**:
 
@@ -156,7 +156,7 @@ Assume that the TodoApp connects to a MySQL database for storing tasks. Here’s
 
    You should see both **my_todoapp** and **mysql_db** containers listed under the network configuration.
 
-   ![CheckContainers](../Docker/Images/check%20containers.png)
+   ![CheckContainers](Images/check%20containers.png)
 
 3. **Access the Application**:
 

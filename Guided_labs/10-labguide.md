@@ -54,7 +54,7 @@ In this example:
 - **`--cap-drop=ALL`**: Drops all default Linux capabilities from the container.
 - **`--cap-add=NET_BIND_SERVICE`**: Adds only the capability to bind network services (like a web server).
 
-  ![Drop](../Docker/Images/DropUnwantedCap.png)
+  ![Drop](Images/DropUnwantedCap.png)
 
 #### **1.2 Verifying Container Capabilities**
 
@@ -66,7 +66,7 @@ docker inspect --format='{{.HostConfig.CapAdd}}' todoapp_container
 
 This command will list the capabilities the container has. You should see only the capabilities you explicitly added (like `NET_BIND_SERVICE`).
 
-  ![VerifyCap](../Docker/Images/VerifyContainercap.png)
+  ![VerifyCap](Images/VerifyContainercap.png)
 
 #### **1.3 Minimal Capabilities for Common Use Cases**
 

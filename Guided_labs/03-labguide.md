@@ -59,7 +59,7 @@ You can run a Docker container from the existing **Java-based TodoApp** image (*
    - **--name my_todoapp**: Names the container **my_todoapp** for easier management.
    - **todoapp**: The name and tag of the image you built.
   
-  ![RunTodoapp](../Docker/Images/Run%20todoapp.png)
+  ![RunTodoapp](Images/Run%20todoapp.png)
 
 
 2. **Verify the Container is Running**:
@@ -71,13 +71,13 @@ You can run a Docker container from the existing **Java-based TodoApp** image (*
    ```
    You should see output similar to:
 
-   ![VerifyContainer](../Docker/Images/Verify%20Container.png)
+   ![VerifyContainer](Images/Verify%20Container.png)
 
 3. **Access the Application**:
 
    Open a browser and navigate to **http://localhost:8081/swagger-ui/index.html** to see your TodoApp running inside the container.
 
-   ![Swagger](../Docker/Images/Swagger.png)
+   ![Swagger](Images/Swagger.png)
 
 ### **Step-2: Managing Running Containers**
 
@@ -96,7 +96,7 @@ Once your container is up and running, Docker provides several commands to manag
    ```
 
    This will list all containers, including those that have stopped.
-   ![ListAllContainers](../Docker/Images/List%20all%20containers.png)
+   ![ListAllContainers](Images/List%20all%20containers.png)
 
 ### **Step-3: Stopping, Restarting, and Removing Containers**
 
@@ -108,11 +108,11 @@ Once your container is up and running, Docker provides several commands to manag
    docker stop my_todoapp
    ```
 
-   ![DockerStop](../Docker/Images/Docker%20stop.png)
+   ![DockerStop](Images/Docker%20stop.png)
 
    This will gracefully stop the **my_todoapp** container.
 
-   ![ListAllContainers](../Docker/Images/List%20all%20containers.png)
+   ![ListAllContainers](Images/List%20all%20containers.png)
 
 2. **Restart a Stopped Container**:
 
@@ -122,7 +122,7 @@ Once your container is up and running, Docker provides several commands to manag
    docker start my_todoapp
    ```
 
-   ![DockerStart](../Docker/Images/Docker%20start.png)
+   ![DockerStart](Images/Docker%20start.png)
 
    This starts the container with the previous configuration (i.e., running the same image).
 
@@ -134,7 +134,7 @@ Once your container is up and running, Docker provides several commands to manag
    docker rm my_todoapp
    ```
 
-   ![RemoveContainer](../Docker/Images/Remove%20container.png)
+   ![RemoveContainer](Images/Remove%20container.png)
 
    **Note**: A running container cannot be removed. You need to stop it first using **docker stop**.
 
@@ -156,7 +156,7 @@ Once your container is up and running, Docker provides several commands to manag
    docker logs my_todoapp
    ```
 
-   ![ContainerLogs](../Docker/Images/Container%20Logs.png)
+   ![ContainerLogs](Images/Container%20Logs.png)
 
    This shows the standard output logs of the running application.
 
@@ -168,7 +168,7 @@ Once your container is up and running, Docker provides several commands to manag
    docker logs -f my_todoapp
    ```
 
-   ![RealtimeLogs](../Docker/Images/Realtime%20Logs.png)
+   ![RealtimeLogs](Images/Realtime%20Logs.png)
 
    This will continue displaying logs as they are written.
 
@@ -180,7 +180,7 @@ Once your container is up and running, Docker provides several commands to manag
    docker inspect my_todoapp
    ```
 
-   ![Inspect](../Docker/Images/Inspect.png)
+   ![Inspect](Images/Inspect.png)
 
    This will return JSON-formatted data that contains all the configuration and status details of the container.
 
@@ -192,7 +192,7 @@ Once your container is up and running, Docker provides several commands to manag
    docker stats my_todoapp
    ```
 
-   ![Status](../Docker/Images/Status.png)
+   ![Status](Images/Status.png)
 
    This command continuously updates with live statistics of the container's resource consumption.
 
